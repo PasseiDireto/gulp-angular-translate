@@ -48,7 +48,7 @@ angular.module("translations", []).config(["$translateProvider", function($trans
 
 gulp-angular-translate([filename](https://github.com/RobbinHabermehl/gulp-angular-translate#filename---string-filenametemplatesjs), [options](https://github.com/RobbinHabermehl/gulp-angular-translate#options))
 
----- 
+----
 
 ### filename - {string} [filename='translations.js']
 
@@ -85,6 +85,15 @@ en_US.json | en_US
 #### standalone - {boolean} [standalone=true]
 
 > Create a new AngularJS module, instead of using an existing.
+
+
+#### partialName - {string} [partialName='']
+
+> If you want to use partialLoader instead a normal angular-translate loader, you need to provide the name of part you want to set
+
+#### addPart - {bool} [addPart=false]
+
+> Using partialLoader, set  it to true if you want to load to translate context a already setted part
 
 ## License
 
